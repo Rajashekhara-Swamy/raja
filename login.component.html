@@ -1,0 +1,12 @@
+<p>login works!</p>
+<form [formGroup]="sign" (ngsubmit)="onClickSubmit(sign.value)">
+    User Name:<br>
+    <input type="text" formControlName="username">
+    <br>
+    <br>
+    password:<br>
+    <input type="text" formControlName="password"><br>
+    <br>
+    <input type="submit" value="Login"><br><br>
+    <button [routerLink]="['/register']">Register</button>
+</form>
